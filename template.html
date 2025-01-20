@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <img style="width: 120px;" src="../logo.png">
+    <div class="px-10 py-5">
+        <div style="display: inline;">
+            <p style="display: inline;">Nationals Training</p>
+            <p style="display: inline;"> - </p>
+            <p style="display: inline;">{Student_Name}</p>
+            <br>
+            <p style="display: inline;">Overall Grade: </p>
+            <p style="display: inline;">{Overall_Grade}</p>
+        </div>
+        
+        <div class="py-5">
+            <p class="text-lg font-bold">Grade Breakdown</p>
+
+            <table class="border-solid border-2 border-grey-400">
+                <tr class="border-2 border-grey-400">
+                    <th class="px-20 border-2 border-grey-400">Assignment</th>
+                    <th class="px-2 border-2 border-grey-400">Max Points</th>
+                    <th class="px-2 border-2 border-grey-400">Points</th>
+                </tr>
+
+                {Grades}                
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
