@@ -42,6 +42,10 @@ def sheetNamePrompt(dataframe):
     
     try:
         num = int(input("> "))
+
+        if num < 0 or num > i:
+            raise ValueError()
+
         return dataframe.sheet_names[num]
     except ValueError as e:
         print("Please only input a number")
